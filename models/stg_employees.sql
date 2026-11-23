@@ -1,4 +1,0 @@
-{{  config(materialized = 'table')  }}
-
-SELECT * FROM DEV.SRC_EMPLOYEES
-WHERE LOAD_TS >= (COALESCE(CURRENT_TIMESTAMP,'1900-01-01 00:00:00'))
